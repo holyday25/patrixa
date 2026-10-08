@@ -1,11 +1,679 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>PATRIXA</title>
-</head>
-<body>
-  <h1>Welcome to PATRIXA</h1>
-  <p>Automated Security Management Platform for Businesses</p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="PATRIXA discovers internet-facing assets and turns security exposure into clear, prioritized action for growing businesses."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="PATRIXA" />
+    <meta
+      property="og:title"
+      content="PATRIXA | Discover Your External Security Risks"
+    />
+    <meta
+      property="og:description"
+      content="Discover exposed assets, assess vulnerabilities, prioritize remediation, and track progress in one place."
+    />
+    <meta property="og:url" content="https://patrixa.cloud/" />
+    <meta
+      property="og:image"
+      content="https://patrixa.cloud/assets/images/og-image.svg"
+    />
+    <link rel="canonical" href="https://patrixa.cloud/" />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/reveal.css" />
+    <title>PATRIXA | Attack Surface Management for Growing Businesses</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="PATRIXA home">
+          <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+            <path d="M18 2.5 31.4 10v16L18 33.5 4.6 26V10L18 2.5Z" />
+            <path d="m11.5 22.5 6.5-12 6.5 12M14.3 18.2h7.4" /></svg
+          ><span>PATRIXA</span>
+        </a>
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          data-menu-button
+        >
+          <span class="sr-only">Open menu</span><span></span><span></span
+          ><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+          <a href="#service">Why ASM</a><a href="#features">Capabilities</a
+          ><a href="#process">How It Works</a><a href="#faq">FAQ</a
+          ><a class="button button-small" href="#contact">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              <span class="status-dot"></span> Attack Surface Management
+            </p>
+            <h1>
+              See your external risks.<br /><span
+                >Act before attackers do.</span
+              >
+            </h1>
+            <p class="hero-description">
+              PATRIXA continuously discovers your internet-facing assets,
+              assesses exposure, and shows your team what to fix first.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#contact"
+                >Talk to Us <span aria-hidden="true">→</span></a
+              ><a class="text-link" href="#service"
+                >Explore the Platform <span aria-hidden="true">↓</span></a
+              >
+            </div>
+            <ul class="hero-points">
+              <li><span aria-hidden="true">✓</span> No agent required</li>
+              <li><span aria-hidden="true">✓</span> Risk-based priorities</li>
+              <li><span aria-hidden="true">✓</span> Actionable reporting</li>
+            </ul>
+          </div>
+          <div
+            class="product-preview reveal"
+            role="img"
+            aria-label="Sample PATRIXA dashboard"
+          >
+            <div class="preview-label">PRODUCT PREVIEW · SAMPLE</div>
+            <div class="preview-window">
+              <div class="window-bar">
+                <div class="window-brand">
+                  <span class="mini-mark">P</span> PATRIXA
+                </div>
+                <div class="window-status"><span></span> Monitoring</div>
+              </div>
+              <div class="window-body">
+                <div class="score-panel">
+                  <div>
+                    <p>Attack Surface Score</p>
+                    <strong>72</strong><span>/ 100</span>
+                  </div>
+                  <div class="score-ring" aria-hidden="true">
+                    <span>B</span>
+                  </div>
+                </div>
+                <div class="metric-grid">
+                  <article>
+                    <span>Assets Found</span><strong>24</strong
+                    ><small>+3 new</small>
+                  </article>
+                  <article>
+                    <span>Open Risks</span><strong>07</strong
+                    ><small class="danger">2 critical</small>
+                  </article>
+                  <article>
+                    <span>Remediated</span><strong>81%</strong
+                    ><small class="safe">↑ 12%</small>
+                  </article>
+                </div>
+                <div class="risk-list">
+                  <div class="list-heading">
+                    <span>Risks requiring attention</span><span>Severity</span>
+                  </div>
+                  <div class="risk-row">
+                    <div>
+                      <span class="asset-icon">W</span>
+                      <p>
+                        Exposed admin portal<small>admin.example.com</small>
+                      </p>
+                    </div>
+                    <b class="risk-critical">Critical</b>
+                  </div>
+                  <div class="risk-row">
+                    <div>
+                      <span class="asset-icon">C</span>
+                      <p>Certificate expiring soon<small>api.example.com</small></p>
+                    </div>
+                    <b class="risk-high">High</b>
+                  </div>
+                  <div class="risk-row">
+                    <div>
+                      <span class="asset-icon">S</span>
+                      <p>
+                        End-of-life software<small>legacy.example.com</small>
+                      </p>
+                    </div>
+                    <b class="risk-medium">Medium</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container hero-footnote">
+          Attackers see your <strong>exposed assets</strong> before they see your organization chart.
+        </div>
+      </section>
+
+      <section class="section problem-section" id="service">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow">WHY ASM</p>
+            <h2>Security incidents start with<br />assets you do not manage.</h2>
+            <p>
+              As your business grows, so does its internet-facing footprint.<br
+                class="desktop-only"
+              />
+              Keeping every asset and exposure in view becomes increasingly difficult.
+            </p>
+          </div>
+          <div class="problem-grid">
+            <article class="problem-card reveal">
+              <span class="card-number">01</span>
+              <div class="problem-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="20" cy="20" r="11" />
+                  <path d="m28 28 9 9M20 14v6l4 3" />
+                </svg>
+              </div>
+              <h3>Unknown external assets</h3>
+              <p>
+                Forgotten subdomains, test servers, and retired systems can remain
+                exposed on the public internet.
+              </p>
+            </article>
+            <article class="problem-card reveal">
+              <span class="card-number">02</span>
+              <div class="problem-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M24 5 5 39h38L24 5Z" />
+                  <path d="M24 17v10M24 33h.01" />
+                </svg>
+              </div>
+              <h3>A constantly changing surface</h3>
+              <p>
+                Cloud resources and third-party services change constantly. A one-time
+                assessment cannot keep pace.
+              </p>
+            </article>
+            <article class="problem-card reveal">
+              <span class="card-number">03</span>
+              <div class="problem-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M9 8h30v32H9zM16 17h16M16 24h11M16 31h7" />
+                  <path d="m31 30 3 3 6-7" />
+                </svg>
+              </div>
+              <h3>Unclear remediation priorities</h3>
+              <p>
+                A list of vulnerabilities alone does not tell your team what to fix
+                first or who should own the response.
+              </p>
+            </article>
+          </div>
+          <div
+            class="value-flow reveal"
+            role="img"
+            aria-label="PATRIXA service workflow"
+          >
+            <div>
+              <span>01</span><strong>Discover</strong><small>Map external assets</small>
+            </div>
+            <i aria-hidden="true">→</i>
+            <div>
+              <span>02</span><strong>Inspect</strong><small>Verify exposure</small>
+            </div>
+            <i aria-hidden="true">→</i>
+            <div>
+              <span>03</span><strong>Assess</strong><small>Analyze risk</small>
+            </div>
+            <i aria-hidden="true">→</i>
+            <div>
+              <span>04</span><strong>Prioritize</strong><small>Guide remediation</small>
+            </div>
+            <i aria-hidden="true">→</i>
+            <div>
+              <span>05</span><strong>Report</strong><small>Track progress</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section surface-section" aria-labelledby="surface-title">
+        <div class="container split-layout">
+          <div
+            class="surface-visual reveal"
+            role="img"
+            aria-label="External attack surface map"
+          >
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="core-node">
+              <span class="core-logo">P</span><strong>YOUR<br />COMPANY</strong>
+            </div>
+            <div class="asset-node node-web">
+              <span>◎</span><small>Websites</small>
+            </div>
+            <div class="asset-node node-cloud">
+              <span>☁</span><small>Cloud</small>
+            </div>
+            <div class="asset-node node-domain">
+              <span>◇</span><small>Domains</small>
+            </div>
+            <div class="asset-node node-ip">
+              <span>⌗</span><small>Public IP</small>
+            </div>
+            <div class="asset-node node-cert">
+              <span>▣</span><small>Certificates</small>
+            </div>
+            <svg
+              class="connection-lines"
+              viewBox="0 0 540 500"
+              aria-hidden="true"
+            >
+              <path
+                d="M270 250 116 111M270 250 424 100M270 250 468 280M270 250 368 430M270 250 97 376"
+              />
+            </svg>
+          </div>
+          <div class="surface-copy reveal">
+            <p class="eyebrow">EXTERNAL ATTACK SURFACE</p>
+            <h2 id="surface-title">
+              See your business<br />through an attacker's eyes.
+            </h2>
+            <p>
+              PATRIXA does not rely solely on your internal inventory. It continuously
+              examines what is actually reachable from the internet to reveal your
+              external attack surface.
+            </p>
+            <ul class="check-list">
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Reveal overlooked assets</strong
+                  ><small>Systematically map external assets tied to your domains</small>
+                </div>
+              </li>
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Validate real-world exposure</strong
+                  ><small>Focus on services that are reachable from the outside</small>
+                </div>
+              </li>
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Track continuous change</strong
+                  ><small>Identify newly added and modified attack surface</small>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features-section" id="features">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">CORE CAPABILITIES</p>
+            <h2>From discovery to action,<br />with clarity at every step.</h2>
+            <p>
+              Instead of overwhelming teams with raw security data, PATRIXA makes it
+              clear what needs attention and what to do next.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card feature-card-wide reveal">
+              <div class="feature-copy">
+                <span class="feature-index">01</span>
+                <h3>External asset discovery</h3>
+                <p>
+                  Identify internet-facing domains, IP addresses, websites, and other
+                  digital assets missing from your inventory.
+                </p>
+              </div>
+              <div class="feature-art discovery-art" aria-hidden="true">
+                <span class="pulse pulse-a"></span
+                ><span class="pulse pulse-b"></span
+                ><span class="radar-dot dot-a"></span
+                ><span class="radar-dot dot-b"></span
+                ><span class="radar-dot dot-c"></span><b>SCANNING</b>
+              </div>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-symbol" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <rect x="6" y="8" width="36" height="30" rx="3" />
+                  <path d="M6 16h36M12 12h.01M17 12h.01M13 24h10M13 30h17" />
+                </svg>
+              </div>
+              <span class="feature-index">02</span>
+              <h3>Website security assessment</h3>
+              <p>
+                Review exposed information, security configurations, and known risk
+                indicators across your web services.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-symbol" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path
+                    d="M24 5 40 11v11c0 10-6.8 17.8-16 21-9.2-3.2-16-11-16-21V11l16-6Z"
+                  />
+                  <path d="m16 25 5 5 11-13" />
+                </svg>
+              </div>
+              <span class="feature-index">03</span>
+              <h3>Risk-based vulnerability assessment</h3>
+              <p>
+                Prioritize response by combining severity, real-world exposure, and
+                potential business impact.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-symbol" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M11 7h26v34H11zM17 16h14M17 23h14M17 30h8" />
+                  <path d="m29 31 3 3 7-8" />
+                </svg>
+              </div>
+              <span class="feature-index">04</span>
+              <h3>Remediation guidance</h3>
+              <p>
+                Understand the cause and impact of each risk, with practical guidance
+                your team can act on.
+              </p>
+            </article>
+            <article class="feature-card reveal">
+              <div class="feature-symbol" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <path d="M9 8h30v32H9zM15 32V24M23 32V16M31 32V20" />
+                </svg>
+              </div>
+              <span class="feature-index">05</span>
+              <h3>Recurring security reports</h3>
+              <p>
+                Share new risks, open issues, and remediation progress through clear,
+                recurring reports.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow">HOW IT WORKS</p>
+            <h2>Continuous security management,<br />without a complex rollout.</h2>
+          </div>
+          <ol class="process-list">
+            <li class="reveal">
+              <span class="process-number">01</span>
+              <div class="process-icon">⌾</div>
+              <h3>Define the scope</h3>
+              <p>Set the assessment scope using your primary business domains.</p>
+            </li>
+            <li class="reveal">
+              <span class="process-number">02</span>
+              <div class="process-icon">⌁</div>
+              <h3>Discover assets and risks</h3>
+              <p>Identify internet-facing assets and potential security exposure.</p>
+            </li>
+            <li class="reveal">
+              <span class="process-number">03</span>
+              <div class="process-icon">◈</div>
+              <h3>Analyze and prioritize</h3>
+              <p>Receive risk priorities and practical remediation guidance.</p>
+            </li>
+            <li class="reveal">
+              <span class="process-number">04</span>
+              <div class="process-icon">↻</div>
+              <h3>Monitor continuously</h3>
+              <p>Track attack surface changes and remediation progress over time.</p>
+            </li>
+          </ol>
+          <p class="process-note reveal">
+            <span>i</span> PATRIXA is designed to assess authorized targets within a
+            controlled and responsible scope.
+          </p>
+        </div>
+      </section>
+
+      <section class="section report-section" aria-labelledby="report-title">
+        <div class="container report-layout">
+          <div class="report-copy reveal">
+            <p class="eyebrow">ACTIONABLE REPORT</p>
+            <h2 id="report-title">
+              Reporting that turns<br />findings into action.
+            </h2>
+            <p>
+              Go beyond raw technical findings. Understand what each risk means, why
+              it matters, and how to address it.
+            </p>
+            <ul class="report-items">
+              <li>
+                <span>01</span>
+                <div>
+                  <strong>Executive risk overview</strong
+                  ><small>Understand security posture and material changes</small>
+                </div>
+              </li>
+              <li>
+                <span>02</span>
+                <div>
+                  <strong>Technical analysis for practitioners</strong
+                  ><small>Review affected assets and underlying causes</small>
+                </div>
+              </li>
+              <li>
+                <span>03</span>
+                <div>
+                  <strong>Prioritized remediation guidance</strong
+                  ><small>Improve systematically based on business risk</small>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="report-preview reveal"
+            role="img"
+            aria-label="Sample security assessment report"
+          >
+            <div class="paper-tag">SAMPLE REPORT</div>
+            <div class="report-page">
+              <div class="report-header">
+                <span class="mini-mark">P</span>
+                <div>
+                  <strong>Security Posture Report</strong
+                  ><small>External Attack Surface</small>
+                </div>
+                <time>2026.10</time>
+              </div>
+              <div class="report-summary">
+                <div>
+                  <small>OVERALL SCORE</small
+                  ><strong>72<span>/100</span></strong
+                  ><em>Moderate</em>
+                </div>
+                <div class="donut"></div>
+              </div>
+              <div class="report-charts">
+                <div>
+                  <small>Risk Distribution</small>
+                  <div class="bar-row bar-critical">
+                    <span>Critical</span><i></i><b>2</b>
+                  </div>
+                  <div class="bar-row bar-high">
+                    <span>High</span><i></i><b>5</b>
+                  </div>
+                  <div class="bar-row bar-medium">
+                    <span>Medium</span><i></i><b>8</b>
+                  </div>
+                  <div class="bar-row bar-low">
+                    <span>Low</span><i></i><b>4</b>
+                  </div>
+                </div>
+                <div>
+                  <small>Remediation Trend</small
+                  ><svg viewBox="0 0 220 100" aria-hidden="true">
+                    <path class="chart-grid" d="M0 20h220M0 50h220M0 80h220" />
+                    <path
+                      class="chart-area"
+                      d="M0 82 35 75 70 77 105 56 140 60 180 32 220 20v80H0Z"
+                    />
+                    <path
+                      class="chart-line"
+                      d="M0 82 35 75 70 77 105 56 140 60 180 32 220 20"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="report-footer">
+                <span>Top priority actions</span>
+                <div><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fit-section">
+        <div class="container">
+          <div class="fit-panel reveal">
+            <div>
+              <p class="eyebrow">BUILT FOR GROWING BUSINESS</p>
+              <h2>Stay ahead of external risk,<br />even with a lean security team.</h2>
+            </div>
+            <ul>
+              <li>
+                <span>✓</span> Businesses managing multiple websites and external services
+              </li>
+              <li><span>✓</span> Growing organizations with limited security resources</li>
+              <li><span>✓</span> Teams that need recurring security posture reporting</li>
+              <li><span>✓</span> IT leaders seeking one view of external assets</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="container faq-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">FREQUENTLY ASKED QUESTIONS</p>
+            <h2>Frequently asked questions</h2>
+            <p>Answers to common questions about PATRIXA and ASM.</p>
+          </div>
+          <div class="accordion" data-accordion>
+            <details class="reveal">
+              <summary>
+                How is ASM different from a vulnerability assessment?<span></span>
+              </summary>
+              <p>
+                Traditional assessments usually start with systems you already know.
+                ASM continuously discovers internet-facing assets from an external
+                perspective and tracks how that exposure changes over time.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>What types of assets can PATRIXA assess?<span></span></summary>
+              <p>
+                Starting with your primary domains, PATRIXA focuses on externally
+                visible assets such as subdomains, websites, public IP addresses, and
+                certificates. The exact scope is agreed during onboarding.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>
+                Will an assessment affect our production services?<span></span>
+              </summary>
+              <p>
+                Service stability is a priority. Assessments are designed for authorized
+                targets and an agreed scope. Timing and assessment intensity can be
+                coordinated for your environment.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>
+                Can teams without dedicated security staff use the results?<span></span>
+              </summary>
+              <p>
+                Yes. Risk level, impact, and recommended action are presented in clear
+                language so both IT practitioners and business leaders can understand
+                the overall posture.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Is this a one-time assessment?<span></span></summary>
+              <p>
+                External attack surfaces change continuously, so recurring assessment
+                is recommended. Monitoring frequency and service scope can be tailored
+                to your environment and needs.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-grid" aria-hidden="true"></div>
+        <div class="contact-orb" aria-hidden="true"></div>
+        <div class="container contact-inner reveal">
+          <p class="eyebrow">GET STARTED</p>
+          <h2>Start with a clear view of<br />your external attack surface.</h2>
+          <p>
+            Talk to us about your environment and how PATRIXA can help.
+          </p>
+          <a
+            class="button button-light"
+            href="mailto:contact@patrixa.cloud?subject=PATRIXA%20Service%20Inquiry"
+            >Contact Us <span aria-hidden="true">→</span></a
+          ><small>contact@patrixa.cloud</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand footer-brand" href="#top"
+            ><svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+              <path d="M18 2.5 31.4 10v16L18 33.5 4.6 26V10L18 2.5Z" />
+              <path d="m11.5 22.5 6.5-12 6.5 12M14.3 18.2h7.4" /></svg
+            ><span>PATRIXA</span></a
+          >
+          <p>Attack Surface Management for growing business.</p>
+        </div>
+        <div class="footer-meta">
+          <a href="mailto:contact@patrixa.cloud">contact@patrixa.cloud</a>
+          <p>© <span data-year></span> PATRIXA. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PATRIXA",
+        "url": "https://patrixa.cloud",
+        "description": "Attack surface management for growing businesses"
+      }
+    </script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="75%" cy="35%"><stop stop-color="#17495a"/><stop offset="1" stop-color="#07111f"/></radialGradient>
+    <pattern id="p" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0v60" fill="none" stroke="#4dded5" stroke-opacity=".08"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/><rect width="1200" height="630" fill="url(#p)"/>
+  <path d="M160 115 236 158v87l-76 43-76-43v-87l76-43Z" fill="#0d292f" stroke="#40d9d1" stroke-width="4"/>
+  <path d="m125 236 35-72 35 72M138 211h44" fill="none" stroke="#65f3e8" stroke-width="6" stroke-linecap="round"/>
+  <text x="290" y="225" fill="#f2f7fb" font-family="Arial, sans-serif" font-size="82" font-weight="700" letter-spacing="9">PATRIXA</text>
+  <text x="88" y="390" fill="#f2f7fb" font-family="Arial, sans-serif" font-size="42" font-weight="700">See your external risks. Act before attackers do.</text>
+  <text x="90" y="455" fill="#91a5b8" font-family="Arial, sans-serif" font-size="25">Attack Surface Management for growing businesses</text>
+  <circle cx="1020" cy="315" r="110" fill="none" stroke="#40d9d1" stroke-opacity=".25"/>
+  <circle cx="1020" cy="315" r="180" fill="none" stroke="#40d9d1" stroke-opacity=".13" stroke-dasharray="8 12"/>
+  <circle cx="1020" cy="315" r="18" fill="#40d9d1"/>
+</svg>

@@ -1,0 +1,40 @@
+/* Progressive enhancement: content stays visible if JavaScript is unavailable. */
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+}
+
+.js .reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bar-critical { --bar: 28%; --color: #ff5d70; }
+.bar-high { --bar: 52%; --color: #ff9f43; }
+.bar-medium { --bar: 70%; --color: #ffd166; }
+.bar-low { --bar: 42%; --color: #42d6bc; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-layout,
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .hero h1,
+  .hero-description {
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+}
